@@ -1,12 +1,12 @@
 {
-  "name": "async-handler",
+  "name": "async-handler-js",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jean de Dieu Mbumba",
   "license": "ISC",
-  "description": ""
+  "description": "A simple async handler for Node.js"
 }
