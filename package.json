@@ -1,12 +1,18 @@
 {
   "name": "async-handler-js",
   "version": "1.0.0",
+  "description": "Simplifiez la gestion des erreurs pour les fonctions asynchrones dans Node.js et Express.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/J2mCoder/async-handler.git"
   },
-  "keywords": [],
-  "author": "Jean de Dieu Mbumba",
-  "license": "ISC",
-  "description": "A simple async handler for Node.js"
+  "keywords": [
+    "async",
+    "handler",
+    "errors",
+    "express"
+  ],
+  "author": "J2mCoder",
+  "license": "MIT"
 }
