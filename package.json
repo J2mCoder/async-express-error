@@ -1,6 +1,6 @@
 {
   "name": "async-handler-js",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Simplifiez la gestion des erreurs pour les fonctions asynchrones dans Node.js et Express.",
   "main": "index.js",
   "repository": {
@@ -11,8 +11,11 @@
     "async",
     "handler",
     "errors",
-    "express"
+    "express",
+    "middleware",
+    "error-handling"
   ],
   "author": "J2mCoder",
-  "license": "MIT"
+  "license": "MIT",
+  "private": false
 }
