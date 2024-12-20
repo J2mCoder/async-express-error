@@ -1,28 +1,28 @@
-# async-handler
+# async-handler-js
 
 ## Description
 
-`async-handler` est une bibliothèque utilitaire pour Express.js qui permet de gérer les erreurs de manière centralisée dans les fonctions asynchrones. Elle enveloppe les fonctions asynchrones pour capturer et transmettre les erreurs à la fonction `next` d'Express, simplifiant ainsi la gestion des erreurs dans les routes Express.
+`async-handler-js` est une bibliothèque utilitaire pour Express.js qui permet de gérer les erreurs de manière centralisée dans les fonctions asynchrones. Elle enveloppe les fonctions asynchrones pour capturer et transmettre les erreurs à la fonction `next` d'Express, simplifiant ainsi la gestion des erreurs dans les routes Express.
 
 ## Installation
 
-Vous pouvez installer `async-handler` via npm :
+Vous pouvez installer `async-handler-js` via npm :
 
 ```bash
-npm install async-handler
+npm install async-handler-js
 ```
 
 ## Utilisation
 
-Voici un exemple d'utilisation de `async-handler` dans une application Express :
+Voici un exemple d'utilisation de `async-handler-js` dans une application Express :
 
 ```javascript
 const express = require("express")
-const asyncHandler = require("async-handler")
+const asyncHandler = require("async-handler-js")
 
 const app = express()
 
-// Exemple d'une route utilisant async-handler
+// Exemple d'une route utilisant async-handler-js
 app.get(
   "/example",
   asyncHandler(async (req, res, next) => {
@@ -47,9 +47,15 @@ app.listen(3000, () => {
 
 ### `asyncHandler(fn)`
 
-- `fn` : La fonction asynchrone que vous souhaitez envelopper.
-- **Retourne** : Une fonction enveloppée qui gère les erreurs.
+- **Paramètres** :
+  - `fn` : La fonction asynchrone que vous souhaitez envelopper.
+- **Retourne** :
+  - Une fonction enveloppée qui gère les erreurs et les transmet à la fonction `next` d'Express.
 
 ## Licence
 
 Ce projet est sous licence ISC.
+
+## Contributions
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez soumettre une pull request ou ouvrir une issue sur GitHub.
