@@ -59,3 +59,13 @@ Ce projet est sous licence ISC.
 ## Contributions
 
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez soumettre une pull request ou ouvrir une issue sur GitHub.
+
+## Futures améliorations
+
+Voici quelques idées pour les futures améliorations de `async-handler-js` :
+
+- **Support TypeScript** : Ajouter des définitions TypeScript pour une meilleure intégration avec les projets TypeScript.
+- **Options de configuration** : Permettre la personnalisation du comportement de gestion des erreurs via des options de configuration.
+- **Documentation améliorée** : Ajouter plus d'exemples et de cas d'utilisation dans la documentation.
+- **Tests unitaires** : Augmenter la couverture des tests unitaires pour garantir la fiabilité de la bibliothèque.
+- **Compatibilité avec d'autres frameworks** : Étendre la compatibilité à d'autres frameworks web en plus d'Express.js.
