@@ -2,6 +2,8 @@
 
 [![npm version](https://badge.fury.io/js/async-express-error.svg)](https://www.npmjs.com/package/async-express-error)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/J2mCoder/async-express-error/actions/workflows/ci.yml/badge.svg)](https://github.com/J2mCoder/async-express-error/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/J2mCoder/async-express-error/branch/main/graph/badge.svg)](https://codecov.io/gh/J2mCoder/async-express-error)
 
 ## Description
 
@@ -202,6 +204,29 @@ npm run lint
 # Formater le code
 npm run format
 ```
+
+## CI/CD
+
+Ce projet utilise GitHub Actions pour l'intégration et le déploiement continus.
+
+### Workflows
+
+- **CI** : Exécute les tests, le linting et le build sur chaque PR/push
+- **Publish** : Publie automatiquement sur npm et crée une release GitHub
+
+### Publier une nouvelle version
+
+```bash
+# Créer un nouveau tag (patch, minor, ou major)
+npm version patch
+
+# Pousser le tag
+git push origin main --tags
+
+# GitHub Actions publie automatiquement sur npm !
+```
+
+⚠️ **Configuration requise** : Ajouter le secret `NPM_TOKEN` dans les paramètres GitHub du repository. Voir [NPM_SETUP.md](.github/NPM_SETUP.md) pour les instructions.
 
 ## Licence
 
