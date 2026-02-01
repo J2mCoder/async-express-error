@@ -19,7 +19,7 @@
     "lint:fix": "eslint src/**/*.ts __tests__/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"__tests__/**/*.ts\"",
-    "clean": "rm -rf dist coverage",
+    "clean": "node -e \"require('fs').rmSync('dist', {recursive:true, force:true}); require('fs').rmSync('coverage', {recursive:true, force:true})\" || true",
     "prepublishOnly": "npm run clean && npm run build && npm test",
     "postversion": "git push && git push --tags"
   },
